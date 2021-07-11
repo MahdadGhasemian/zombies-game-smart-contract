@@ -97,4 +97,17 @@ contract("ZombiesGame", (accounts) => {
     // assert.equal(result.receipt.status, true);
     expect(result.receipt.status).to.equal(true);
   });
+  it("get zombie by id and show it", async () => {
+    const result = await contractInstance.createRandomZombie(zombieNames[0], {
+      from: alice,
+    });
+
+    const result2 = await contractInstance.getZombiesByOwner(alice, {
+      from: alice,
+    });
+
+    console.log(result2);
+
+    expect(true).to.equal(true);
+  });
 });
