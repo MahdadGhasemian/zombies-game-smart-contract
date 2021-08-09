@@ -7,7 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "truffle compile",
+    "test": "truffle test",
+    "migrate": "truffle test",
+    "migrate-ropsten": "truffle migrate --network ropsten",
+    "migrate-rinkeby": "truffle migrate --network rinkeby"
   },
   "author": "",
   "license": "ISC",
