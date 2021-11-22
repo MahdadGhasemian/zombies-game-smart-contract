@@ -53,11 +53,4 @@ contract ZombieFactory is Ownable {
         randDna = randDna - (randDna % 100);
         _createZombie(_name, randDna);
     }
-
-    function createRandomZombieFree(string memory _name) public {
-        // require(ownerZombieCount[msg.sender] == 0);
-        uint256 randDna = _generateRandomDna(_name);
-        randDna = randDna - (randDna % 100);
-        _createZombie(_name, randDna);
-    }
 }
