@@ -81,7 +81,7 @@ module.exports = {
       port: 7545,
       network_id: "*", // Match any network id
       websockets: true,
-      from: "0x22ac02eEc588938130Cbd924a01c191f68161eef",
+      from: "0x1C3551040c18DC6a02b601a395AC27C48D16e1b8",
     },
     develop: {
       port: 8545,
